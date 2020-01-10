@@ -996,9 +996,9 @@ func truncateBody(body string) string {
 	switch {
 	case bool(klog.V(10)):
 		return body
-	case bool(klog.V(9).Enabled():
+	case bool(klog.V(9).Enabled()):
 		max = 10240
-	case bool(klog.V(8).Enabled():
+	case bool(klog.V(8).Enabled()):
 		max = 1024
 	}
 
