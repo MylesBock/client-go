@@ -25,10 +25,10 @@ import (
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/runtime/schema"
 	"k8s.io/apimachinery/pkg/watch"
-	"k8s.io/client-go/dynamic"
-	"k8s.io/client-go/dynamic/dynamiclister"
-	"k8s.io/client-go/informers"
-	"k8s.io/client-go/tools/cache"
+	"github.com/MylesBock/client-go/dynamic"
+	"github.com/MylesBock/client-go/dynamic/dynamiclister"
+	"github.com/MylesBock/client-go/informers"
+	"github.com/MylesBock/client-go/tools/cache"
 )
 
 // NewDynamicSharedInformerFactory constructs a new instance of dynamicSharedInformerFactory for all namespaces.

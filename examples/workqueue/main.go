@@ -28,10 +28,10 @@ import (
 	"k8s.io/apimachinery/pkg/fields"
 	"k8s.io/apimachinery/pkg/util/runtime"
 	"k8s.io/apimachinery/pkg/util/wait"
-	"k8s.io/client-go/kubernetes"
-	"k8s.io/client-go/tools/cache"
-	"k8s.io/client-go/tools/clientcmd"
-	"k8s.io/client-go/util/workqueue"
+	"github.com/MylesBock/client-go/kubernetes"
+	"github.com/MylesBock/client-go/tools/cache"
+	"github.com/MylesBock/client-go/tools/clientcmd"
+	"github.com/MylesBock/client-go/util/workqueue"
 )
 
 type Controller struct {

@@ -20,7 +20,7 @@ import (
 	"context"
 
 	authorizationapi "k8s.io/api/authorization/v1beta1"
-	core "k8s.io/client-go/testing"
+	core "github.com/MylesBock/client-go/testing"
 )
 
 func (c *FakeSelfSubjectAccessReviews) Create(sar *authorizationapi.SelfSubjectAccessReview) (result *authorizationapi.SelfSubjectAccessReview, err error) {

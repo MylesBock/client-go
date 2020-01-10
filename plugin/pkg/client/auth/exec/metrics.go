@@ -20,7 +20,7 @@ import (
 	"sync"
 	"time"
 
-	"k8s.io/client-go/tools/metrics"
+	"github.com/MylesBock/client-go/tools/metrics"
 )
 
 type certificateExpirationTracker struct {
