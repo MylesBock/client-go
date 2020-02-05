@@ -26,7 +26,7 @@ import (
 	"testing"
 
 	"github.com/gogo/protobuf/proto"
-	"github.com/googleapis/gnostic/OpenAPIv2"
+	"github.com/googleapis/gnostic/openapiv2"
 	"github.com/stretchr/testify/assert"
 
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
@@ -359,7 +359,7 @@ func openapiSchemaDeprecatedFakeServer(status int) (*httptest.Server, error) {
 			sErr = fmt.Errorf("Unexpected method %v", req.Method)
 		}
 
-		mime.AddExtensionType(".pb-v1", "application/com.github.googleapis.gnostic.OpenAPIv2@68f4ded+protobuf")
+		mime.AddExtensionType(".pb-v1", "application/com.github.googleapis.gnostic.openapiv2@68f4ded+protobuf")
 
 		output, err := proto.Marshal(&returnedOpenAPI)
 		if err != nil {
@@ -386,7 +386,7 @@ func openapiSchemaFakeServer() (*httptest.Server, error) {
 			sErr = fmt.Errorf("Unexpected accept mime type %v", decipherableFormat)
 		}
 
-		mime.AddExtensionType(".pb-v1", "application/com.github.googleapis.gnostic.OpenAPIv2@68f4ded+protobuf")
+		mime.AddExtensionType(".pb-v1", "application/com.github.googleapis.gnostic.openapiv2@68f4ded+protobuf")
 
 		output, err := proto.Marshal(&returnedOpenAPI)
 		if err != nil {
