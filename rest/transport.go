@@ -21,8 +21,8 @@ import (
 	"errors"
 	"net/http"
 
-	"k8s.io/client-go/plugin/pkg/client/auth/exec"
-	"k8s.io/client-go/transport"
+	"github.com/MylesBock/client-go/plugin/pkg/client/auth/exec"
+	"github.com/MylesBock/client-go/transport"
 )
 
 // TLSConfigFor returns a tls.Config that will provide the transport level security defined

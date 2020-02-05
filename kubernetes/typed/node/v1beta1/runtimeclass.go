@@ -25,8 +25,8 @@ import (
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	types "k8s.io/apimachinery/pkg/types"
 	watch "k8s.io/apimachinery/pkg/watch"
-	scheme "k8s.io/client-go/kubernetes/scheme"
-	rest "k8s.io/client-go/rest"
+	scheme "github.com/MylesBock/client-go/kubernetes/scheme"
+	rest "github.com/MylesBock/client-go/rest"
 )
 
 // RuntimeClassesGetter has a method to return a RuntimeClassInterface.

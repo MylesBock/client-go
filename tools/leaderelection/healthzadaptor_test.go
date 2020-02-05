@@ -24,7 +24,7 @@ import (
 	"net/http"
 
 	"k8s.io/apimachinery/pkg/util/clock"
-	rl "k8s.io/client-go/tools/leaderelection/resourcelock"
+	rl "github.com/MylesBock/client-go/tools/leaderelection/resourcelock"
 )
 
 type fakeLock struct {

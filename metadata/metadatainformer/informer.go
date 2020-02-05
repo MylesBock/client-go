@@ -24,10 +24,10 @@ import (
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/runtime/schema"
 	"k8s.io/apimachinery/pkg/watch"
-	"k8s.io/client-go/informers"
-	"k8s.io/client-go/metadata"
-	"k8s.io/client-go/metadata/metadatalister"
-	"k8s.io/client-go/tools/cache"
+	"github.com/MylesBock/client-go/informers"
+	"github.com/MylesBock/client-go/metadata"
+	"github.com/MylesBock/client-go/metadata/metadatalister"
+	"github.com/MylesBock/client-go/tools/cache"
 )
 
 // NewSharedInformerFactory constructs a new instance of metadataSharedInformerFactory for all namespaces.

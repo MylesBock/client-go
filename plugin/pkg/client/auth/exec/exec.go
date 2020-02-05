@@ -38,12 +38,12 @@ import (
 	"k8s.io/apimachinery/pkg/runtime/schema"
 	"k8s.io/apimachinery/pkg/runtime/serializer"
 	utilruntime "k8s.io/apimachinery/pkg/util/runtime"
-	"k8s.io/client-go/pkg/apis/clientauthentication"
-	"k8s.io/client-go/pkg/apis/clientauthentication/v1alpha1"
-	"k8s.io/client-go/pkg/apis/clientauthentication/v1beta1"
-	"k8s.io/client-go/tools/clientcmd/api"
-	"k8s.io/client-go/transport"
-	"k8s.io/client-go/util/connrotation"
+	"github.com/MylesBock/client-go/pkg/apis/clientauthentication"
+	"github.com/MylesBock/client-go/pkg/apis/clientauthentication/v1alpha1"
+	"github.com/MylesBock/client-go/pkg/apis/clientauthentication/v1beta1"
+	"github.com/MylesBock/client-go/tools/clientcmd/api"
+	"github.com/MylesBock/client-go/transport"
+	"github.com/MylesBock/client-go/util/connrotation"
 	"k8s.io/klog"
 )
 

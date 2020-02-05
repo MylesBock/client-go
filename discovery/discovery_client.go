@@ -35,8 +35,8 @@ import (
 	"k8s.io/apimachinery/pkg/runtime/serializer"
 	utilruntime "k8s.io/apimachinery/pkg/util/runtime"
 	"k8s.io/apimachinery/pkg/version"
-	"k8s.io/client-go/kubernetes/scheme"
-	restclient "k8s.io/client-go/rest"
+	"github.com/MylesBock/client-go/kubernetes/scheme"
+	restclient "github.com/MylesBock/client-go/rest"
 )
 
 const (
