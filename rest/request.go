@@ -996,9 +996,9 @@ func truncateBody(body string) string {
 	switch {
 	case bool(klog.V(10)):
 		return body
-	case bool(klog.V(9).Enabled()):
+	case bool(klog.V(9)):
 		max = 10240
-	case bool(klog.V(8).Enabled()):
+	case bool(klog.V(8)):
 		max = 1024
 	}
 
@@ -1013,7 +1013,7 @@ func truncateBody(body string) string {
 // allocating a new string for the body output unless necessary. Uses a simple heuristic to determine
 // whether the body is printable.
 func glogBody(prefix string, body []byte) {
-	if klog.V(8).Enabled(){
+	if klog.V(8){
 		if bytes.IndexFunc(body, func(r rune) bool {
 			return r < 0x0a
 		}) != -1 {
